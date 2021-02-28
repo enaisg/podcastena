@@ -250,6 +250,10 @@ h2{
 iframe{
   padding: 10px;
   max-width: 584px;
+  border: none;
+  width: 100%;
+  height: 232px;
+  
 }
 .section{
   display: flex;
