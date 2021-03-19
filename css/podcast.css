@@ -103,28 +103,28 @@ header .menu-icon .navicon:after {
 
 /* menu btn */
 
-header .menu-btn {
+.menu-btn {
   display: none;
 }
 
-header .menu-btn:checked ~ .menu {
+.menu-btn:checked ~ header .menu {
   max-height: 240px;
 }
 
-header .menu-btn:checked ~ .menu-icon .navicon {
+.menu-btn:checked ~ header .menu-icon .navicon {
   background: transparent;
 }
 
-header .menu-btn:checked ~ .menu-icon .navicon:before {
+.menu-btn:checked ~ header .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-header .menu-btn:checked ~ .menu-icon .navicon:after {
+.menu-btn:checked ~ header .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.menu-btn:checked ~ header .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ header .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -171,10 +171,11 @@ h1{
   content: ".";
     }
 .titulo{
-  margin-left: 3%;
+  margin-left: 10%;
   margin-right: 10%; 
   max-width: 300px;
-  max-height: 84px; 
+  max-height: 84px;
+  font-size: 36px; 
 }
 }
 .complete{
@@ -198,7 +199,7 @@ h1{
   display: inline-block;
   font-size: 14px;
   line-height: 22px;
-  margin-left: 5%;
+  margin-left: 10%;
   max-width: 288px;
   text-align: justify;
   }
@@ -253,7 +254,7 @@ iframe{
   border: none;
   width: 100%;
   height: 232px;
-  
+
 }
 .section{
   display: flex;
@@ -276,7 +277,7 @@ iframe{
   max-width: 457.6px;
   max-height: 660px;
 }
-.text h1{
+.text h2{
   font-family: 'IBM Plex Sans';
   font-size: 48px;
   color: #060A24
@@ -309,7 +310,7 @@ iframe{
   .text{
   margin-top: 0%;
   }
-  h1{
+  h2{
     margin-left: 3%;
   }
   .text p{
@@ -329,8 +330,14 @@ iframe{
   .estelares{
     max-width: 288px;
     margin: 5%;
+    color: #060A24;
   }
   }
+.estelares{
+  font-size: 48px;
+  margin: 5%;
+  color: #060A24;
+}
 .imagess{
   display: flex;
   flex-wrap: wrap;
@@ -341,6 +348,7 @@ iframe{
   width: 100%;
   max-width: 500px;
 }
+
 .icons{
   margin: auto;
   max-width: 1200px;
@@ -362,9 +370,10 @@ iframe{
   max-width: 288px;
   text-align: center;
 }
-.iconstitulo{
-    margin-left: 5%;
+.iconstitulo {
+    margin-left: 10%;
     font-size: 48px;
+    color: black;
 }
 
 @media screen and (max-width: 768px){
@@ -381,6 +390,7 @@ iframe{
     max-width: 288px; 
   }
 }
+
 .news{
   background: linear-gradient(225deg, #0000FF, #0000A3);
   clip-path: polygon(100% 0%, 0% 30%, 0% 100%, 100% 100%);
@@ -390,20 +400,21 @@ iframe{
   position: relative;
 }
 @media screen and (max-width: 768px){
-.news{
-background: linear-gradient(225deg, #0000FF, #0000A3);
-clip-path: polygon(100% 0%, 0% 18%, 0% 100%, 100% 100%);  
+  .news{
+  background: linear-gradient(225deg, #0000FF, #0000A3);
+  clip-path: polygon(100% 0%, 0% 18%, 0% 100%, 100% 100%);  
+  }
+  .title{
+    max-width: 288px;
+    margin: auto;
+    margin-top: 14%;
+  }
+  .button2{
+    max-width: 288px;
+    max-height: 48px;
+  }
 }
-.title{
-  max-width: 288px;
-  margin: auto;
-  margin-top: 14%;
-}
-.button2{
-  max-width: 288px;
-  max-height: 48px;
-}
-}
+
 .title{
   color: white;
   text-align: center;
